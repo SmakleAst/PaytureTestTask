@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace PaytureTestTask.Application.PaytureApiProvider.Queries.GetState
 {
-    internal class GetStateQuery
+    public class GetStateQuery : IRequest<GetStateDetailsVm>
     {
+        public string Key { get; set; }
+        public string OrderId { get; set; }
     }
 }
