@@ -15,7 +15,7 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay
         public string Success { get; set; }
 
         [XmlAttribute("Amount")]
-        public int? Amount { get; set; }
+        public string? Amount { get; set; }
 
         [XmlAttribute("ACSUrl")]
         public string? ACSUrl { get; set; }

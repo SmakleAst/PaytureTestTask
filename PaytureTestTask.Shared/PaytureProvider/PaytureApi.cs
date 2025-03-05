@@ -11,7 +11,7 @@ namespace PaytureTestTask.Shared.PaytureProvider
 
         public async Task<RestResponse> GetState(GetStateRequestDto getStateRequestDto)
         {
-            var client = new RestClient($"https://{_host}/api/Pay");
+            var client = new RestClient($"https://{_host}/api/GetState");
             var request = new RestRequest("", Method.Post);
 
             request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -37,7 +37,7 @@ namespace PaytureTestTask.Shared.PaytureProvider
             request.AddParameter("Amount", payRequestDto.Amount);
             request.AddParameter("OrderId", orderId);
             request.AddParameter("PayInfo",
-                $"PAN={payRequestDto.Key};" +
+                $"PAN={payRequestDto.PayInfo.PAN};" +
                 $"EMonth={payRequestDto.PayInfo.EMonth};" +
                 $"EYear={payRequestDto.PayInfo.EYear};" +
                 $"CardHolder={payRequestDto.PayInfo.CardHolder};" +

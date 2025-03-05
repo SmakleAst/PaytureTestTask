@@ -1,6 +1,10 @@
 using Asp.Versioning;
 using Microsoft.Extensions.Options;
 using PaytureTestTask.Api;
+using PaytureTestTask.Application;
+using PaytureTestTask.Application.Common.Mappings;
+using PaytureTestTask.Application.Interfaces;
+using PaytureTestTask.Shared;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 
@@ -27,6 +31,17 @@ builder.Services.AddApiVersioning(option =>
     option.SubstituteApiVersionInUrl = true;
 });
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+
+// DI
+builder.Services.AddApplication();
+builder.Services.AddShared();
+
+// AutoMapper
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
+    cfg.AddProfile(new AssemblyMappingProfile(typeof(IPaytureApi).Assembly));
+});
 
 var app = builder.Build();
 

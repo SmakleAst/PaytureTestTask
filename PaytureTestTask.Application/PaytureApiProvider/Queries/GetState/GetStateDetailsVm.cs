@@ -8,11 +8,11 @@ namespace PaytureTestTask.Application.PaytureApiProvider.Queries.GetState
     {
         public string Success { get; set; }
         public string OrderId { get; set; }
-        public bool Forwarded { get; set; }
+        public string Forwarded { get; set; }
         public string? State { get; set; }
         public string? MerchantContract { get; set; }
         public string? FinalTerminal { get; set; }
-        public int? Amount { get; set; }
+        public string? Amount { get; set; }
         public string? RRN { get; set; }
         public string? AddInfo { get; set; }
         public string? ErrCode { get; set; }

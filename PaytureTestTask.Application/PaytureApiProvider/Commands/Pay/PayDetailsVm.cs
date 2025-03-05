@@ -10,7 +10,7 @@ namespace PaytureTestTask.Application.PaytureApiProvider.Commands.Pay
         public string OrderId { get; set; }
         public string Key { get; set; }
         public string Success { get; set; }
-        public int? Amount { get; set; }
+        public string? Amount { get; set; }
         public string? ACSUrl { get; set; }
         public string? PaReq { get; set; }
         public string? ThreeDSKey { get; set; }

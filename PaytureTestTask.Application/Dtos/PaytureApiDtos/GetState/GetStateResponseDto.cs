@@ -12,7 +12,7 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.GetState
         public string OrderId { get; set; }
 
         [XmlAttribute("Forwarded")]
-        public bool Forwarded { get; set; }
+        public string Forwarded { get; set; }
 
         [XmlAttribute("State")]
         public string? State { get; set; }
@@ -24,7 +24,7 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.GetState
         public string? FinalTerminal { get; set; }
 
         [XmlAttribute("Amount")]
-        public int? Amount { get; set; }
+        public string? Amount { get; set; }
 
         [XmlAttribute("RRN")]
         public string? RRN { get; set; }
