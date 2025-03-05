@@ -8,16 +8,16 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay
         public string PAN { get; set; }
 
         [JsonPropertyName("EMonth")]
-        public string EMonth { get; set; }
+        public int EMonth { get; set; }
 
         [JsonPropertyName("EYear")]
-        public string EYear { get; set; }
+        public int EYear { get; set; }
 
         [JsonPropertyName("CardHolder")]
         public string CardHolder { get; set; }
 
         [JsonPropertyName("SecureCode")]
-        public string SecureCode { get; set; }
+        public int SecureCode { get; set; }
 
         [JsonPropertyName("Amount")]
         public int Amount { get; set; }
