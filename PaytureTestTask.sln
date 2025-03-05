@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{05EB7DAA-D06C-4D0D-A6FA-DA2F5B1EE169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Domain", "PaytureTestTask.Domain\PaytureTestTask.Domain.csproj", "{EC67C485-1D95-46F1-A3C0-6C695A9737A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaytureTestTask.Domain", "PaytureTestTask.Domain\PaytureTestTask.Domain.csproj", "{EC67C485-1D95-46F1-A3C0-6C695A9737A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Application", "PaytureTestTask.Application\PaytureTestTask.Application.csproj", "{B2C479B2-A45D-40A3-B649-86A59E34C6A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaytureTestTask.Application", "PaytureTestTask.Application\PaytureTestTask.Application.csproj", "{B2C479B2-A45D-40A3-B649-86A59E34C6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Persistence", "PaytureTestTask.Persistence\PaytureTestTask.Persistence.csproj", "{6098B1EB-4A90-4093-84AC-516C4BD529A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaytureTestTask.Persistence", "PaytureTestTask.Persistence\PaytureTestTask.Persistence.csproj", "{6098B1EB-4A90-4093-84AC-516C4BD529A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Shared", "PaytureTestTask.Shared\PaytureTestTask.Shared.csproj", "{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaytureTestTask.Api", "PaytureTestTask.Api\PaytureTestTask.Api.csproj", "{44901B2D-F6B5-44BD-8425-ACD4828878B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Api", "PaytureTestTask.Api\PaytureTestTask.Api.csproj", "{44901B2D-F6B5-44BD-8425-ACD4828878B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaytureTestTask.Shared", "PaytureTestTask.Shared\PaytureTestTask.Shared.csproj", "{25B0B5D9-4458-49D3-9C8A-1B42B40F140C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,14 +39,14 @@ Global
 		{6098B1EB-4A90-4093-84AC-516C4BD529A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6098B1EB-4A90-4093-84AC-516C4BD529A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6098B1EB-4A90-4093-84AC-516C4BD529A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44901B2D-F6B5-44BD-8425-ACD4828878B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44901B2D-F6B5-44BD-8425-ACD4828878B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44901B2D-F6B5-44BD-8425-ACD4828878B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44901B2D-F6B5-44BD-8425-ACD4828878B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B0B5D9-4458-49D3-9C8A-1B42B40F140C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B0B5D9-4458-49D3-9C8A-1B42B40F140C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B0B5D9-4458-49D3-9C8A-1B42B40F140C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B0B5D9-4458-49D3-9C8A-1B42B40F140C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,8 +55,8 @@ Global
 		{EC67C485-1D95-46F1-A3C0-6C695A9737A0} = {72C500AA-2030-4502-AC21-284F384B64AF}
 		{B2C479B2-A45D-40A3-B649-86A59E34C6A3} = {72C500AA-2030-4502-AC21-284F384B64AF}
 		{6098B1EB-4A90-4093-84AC-516C4BD529A3} = {4ED9840F-840F-4A31-B4D6-10C9D37ACC4F}
-		{5BFD8CB9-683E-40E1-85B9-C7AA0BA3AEC4} = {4ED9840F-840F-4A31-B4D6-10C9D37ACC4F}
 		{44901B2D-F6B5-44BD-8425-ACD4828878B4} = {AFD608D0-B086-40D1-B3F0-E027F615C190}
+		{25B0B5D9-4458-49D3-9C8A-1B42B40F140C} = {4ED9840F-840F-4A31-B4D6-10C9D37ACC4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18639BBA-669B-42B9-A80B-8E24EEF3C483}
