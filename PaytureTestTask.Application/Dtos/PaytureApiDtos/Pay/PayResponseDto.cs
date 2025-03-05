@@ -15,6 +15,27 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay
         public string Success { get; set; }
 
         [XmlAttribute("Amount")]
-        public int Amount { get; set; }
+        public int? Amount { get; set; }
+
+        [XmlAttribute("ACSUrl")]
+        public string? ACSUrl { get; set; }
+
+        [XmlAttribute("PaReq")]
+        public string? PaReq { get; set; }
+
+        [XmlAttribute("ThreeDSKey")]
+        public string? ThreeDSKey { get; set; }
+
+        [XmlAttribute("ThreeDSVersion")]
+        public string? ThreeDSVersion { get; set; }
+
+        [XmlAttribute("FinalTerminal")]
+        public string? FinalTerminal { get; set; }
+
+        [XmlAttribute("AddInfo")]
+        public string? AddInfo { get; set; }
+
+        [XmlAttribute("ErrCode")]
+        public string? ErrCode { get; set; }
     }
 }

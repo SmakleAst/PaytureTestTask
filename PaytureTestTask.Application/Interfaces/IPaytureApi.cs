@@ -6,6 +6,6 @@ namespace PaytureTestTask.Application.Interfaces
     public interface IPaytureApi
     {
         Task<RestResponse> Pay(PayRequestDto payRequestDto);
-        //Task<RestResponse> GetRequest();
+        Task<RestResponse> GetRequest(GetStateRequestDto getStateRequestDto);
     }
 }

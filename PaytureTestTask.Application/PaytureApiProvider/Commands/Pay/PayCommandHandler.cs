@@ -2,7 +2,6 @@
 using MediatR;
 using PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay;
 using PaytureTestTask.Application.Interfaces;
-using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 
 namespace PaytureTestTask.Application.PaytureApiProvider.Commands.Pay
@@ -26,11 +25,11 @@ namespace PaytureTestTask.Application.PaytureApiProvider.Commands.Pay
                 Amount = request.Amount,
                 PayInfo = request.PayInfo,
             };
-
+             
             var response = await _paytureApi.Pay(payRequestDto);
 
-            XmlSerializer serializer = new XmlSerializer(typeof(PayResponseDto));
-            using StringReader reader = new StringReader(response.Content);
+            var serializer = new XmlSerializer(typeof(PayResponseDto));
+            using var reader = new StringReader(response.Content);
             var payResponseDto = serializer.Deserialize(reader) as PayResponseDto;
 
             return _mapper.Map<PayDetailsVm>(payResponseDto);
