@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using PaytureTestTask.Application.Dtos.PaytureApiDtos.GetState;
-using PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay;
 using PaytureTestTask.Application.Interfaces;
-using PaytureTestTask.Application.PaytureApiProvider.Commands.Pay;
 using System.Xml.Serialization;
 
 namespace PaytureTestTask.Application.PaytureApiProvider.Queries.GetState
