@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaytureTestTask.Shared\PaytureTestTask.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
