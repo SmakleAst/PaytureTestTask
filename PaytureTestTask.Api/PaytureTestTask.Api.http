@@ -1,0 +1,6 @@
+@PaytureTestTask.Api_HostAddress = http://localhost:5285
+
+GET {{PaytureTestTask.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
