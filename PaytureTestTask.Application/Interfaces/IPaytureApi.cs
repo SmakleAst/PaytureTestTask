@@ -1,10 +1,11 @@
-﻿using RestSharp;
+﻿using PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay;
+using RestSharp;
 
 namespace PaytureTestTask.Application.Interfaces
 {
     public interface IPaytureApi
     {
-        Task<RestRequest> Pay();
-        //Task<RestRequest> GetRequest();
+        Task<RestResponse> Pay(PayRequestDto payRequestDto);
+        //Task<RestResponse> GetRequest();
     }
 }

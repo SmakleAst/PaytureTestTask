@@ -23,4 +23,3 @@ namespace PaytureTestTask.Application.Dtos.PaytureApiDtos.Pay
         public int Amount { get; set; }
     }
 }
-}
